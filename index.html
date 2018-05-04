@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>·•● SH • LEE ●•·</title>
+    <meta name="designer" content="SHLEE">
+    <meta name="author" content="Alberto Hartzet">
+    <meta name="description" content="SH Portfolio">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
+
+
+
+
+  <style>
+
+html, body, .page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
+  color: white;
+  overflow: hidden; 
+
+}
+
+* {
+  font-family: 'open sans', 'lato', 'helvetica', sans-serif;
+}
+
+
+
+
+.page {
+  position: absolute;
+}
+
+#p1 {
+  left: 0;
+}
+
+#p2, #p3, #p4, #p5 {
+  left: 200%;
+}
+
+
+
+#p1 { background: #F6FDFD; }
+#p2 { background: white; }
+#p3 { background: #F6FDFD; }
+#p4 { background: white; }
+#p5 { background: #F6FDFD; }
+
+
+#t2:target #p2,
+#t3:target #p3,
+#t4:target #p4,
+#t5:target #p5 {
+  transform: translateX(-190%);
+  -webkit-transform: translateX(-190%);
+  -moz-transform: translateX(-190%);
+  -o-transform: translateX(-190%);
+  transition-delay: .4s !important;
+}
+/*when click - transition*/
+#t2:target #p1, 
+#t3:target #p1,
+#t4:target #p1,
+#t5:target #p1{
+  background: white;
+}
+
+#t2:target #p1 .icon, 
+#t3:target #p1 .icon,
+#t4:target #p1 .icon,
+#t5:target #p1 .icon {
+  -webkit-filter: blur(3px);
+}
+
+.icon {
+  color: black;
+  font-size: 21px;
+  display: block;
+}
+
+ul .icon:hover {
+  opacity: 0.5;
+}
+
+.page .icon .title {
+  line-height: 2;
+}
+
+#t2:target ul .icon,
+#t3:target ul .icon,
+#t4:target ul .icon,
+#t5:target ul .icon{
+  transform: scale(.6);
+  -webkit-transform: scale(.6);
+  -moz-transform: scale(.6);
+  -o-transform: scale(.6);
+  transition-delay: .25s;
+}
+
+#t2:target #dos,
+#t3:target #tres,
+#t4:target #cuatro,
+#t5:target #cinco {
+  transform: scale(1) !important;
+  -webkit-transform: scale(1) !important;
+  -moz-transform: scale(1) !important;
+  -o-transform: scale(1) !important;
+}
+
+ul {
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 100%;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+  border-color: gray;
+  border-style: solid;
+  border-width: 0px 1px 0px 0px;
+ }
+
+
+
+#menu .icon {
+  margin: 55% 0;
+
+  transition: all .5s ease-out !important;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title, .hint, .descrip {
+  display: block;
+}
+
+/*#titleBox{
+
+  width: 300px;
+  height: 50px;
+  float: right;
+}*/
+
+.title {
+
+
+  font-size: 24px;
+  text-align: right;
+}
+
+.hint {
+  font-size: 10px;
+  line-height: 1.2;
+
+
+
+}
+
+#desBox{
+
+  width: 30px;
+  height: 30px;
+  position: relative;
+  float: right;
+  top:30px;
+  left: 140px;
+
+
+}
+
+.descrip{
+
+  font-size: 14px;
+  text-align: right;
+  color: #777777;
+}
+
+.descripinfo{
+
+  font-size: 11px;
+  text-align: right;
+  float: right;
+  color:black;
+}
+
+.line-trough {
+  text-decoration: line-through;
+}
+
+.page .icon {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  right: 10%;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  margin: auto;
+
+  line-height: 1.2;
+  transform: translateX(360%);
+  -webkit-transform: translateX(360%);
+  -moz-transform: translateX(360%);
+  -o-transform: translateX(360%);
+  transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  -webkit-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  -moz-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+}
+
+.page#p1 .icon {
+
+  right: 10%
+}
+
+.page#p1 .icon {
+  transform: translateX(10%) !important;
+}
+
+
+
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+
+  <div class="ct" id="t1">
+  <div class="ct" id="t2">
+    <div class="ct" id="t3">
+      <div class="ct" id="t4">
+         <div class="ct" id="t5">
+          <ul id="menu">
+            <a href="#t1"><li class="icon fa fa-smile-o" id="uno"><span class="hint"><br>SH.LEE</span></li></a>
+            <a href="#t2"><li class="icon fa fa-mobile" id="dos"><span class="hint"><br>INTERACTION<br>DESIGN<br>2015-2017</span></li></a>
+            
+            <a href="#t3"><li class="icon fa fa-gamepad" id="tres"><span class="hint"><br>PLAYGROUND:<br>QUICK PROTOTYPING<br>2015-2017</span></li></a>
+            <a href="#t4"><li class="icon fa fa-lightbulb-o" id="cuatro"><span class="hint"><br>ADVERTISING<br>2010-2011</span></li></a>
+            <a href="#t5"><li class="icon fa fa-pencil" id="cinco"><span class="hint"><br>CONTACT</span></li></a>
+          </ul>
+
+
+
+
+          <div class="page" id="p1">
+             <section class="icon"><span class="title">SEUNG WHAN LEE</span><br><span class="descrip">I’m an interaction designer focused on UI/UX,<br>mobile app development, and front-end design.<br>I have developed various mobile applications that<br>deliver intuitive, user-centric experiences<br>that bridge the digital and physical world.<br><br>
+ 
+              I’m proficient in implementing product ideas,<br>managing the overall design and development process<br>with a keen eye for detail.<br>I have a strong understanding of iOS development<br>in a highly-collaborative environment as well.<br><br>
+
+              I am eager to learn new techniques in-depth and<br>utilize my knowledge in combination with my<br>real-life experiences in creating brands.</span>
+          
+
+              <div class="timeline">
+                <div class="timeline-item-1" data-caption="March, 2017 GDC&#xa;(San Francisco, CA)&#xa;&#xa;SCHADENFREUDE: FINALIST alt.ctrl">
+                  <div class="circle"></div>
+                </div>
+                <div class="timeline-item-2" data-caption="2016 Babycastles&#xa;(New York, NY)&#xa;&#xa;CHASER: Game Exhibition">
+                  <div class="circle"></div>
+                </div>
+                <div class="timeline-item-3 is-active" data-caption="2016 Parsons x China PANORAMA&#xa;&#xa;collaboration lab Collaborated&#xa;with Tongji, Tsinghua, Sinhuan&#xa;Fine Arts Instutitue in China">
+                  <div class="circle"></div>
+                </div>
+                <div class="timeline-item-4" data-caption="2016 Parsons x Learning&#xa;Community Charter School&#xa;&#xa;LABYRINTH: Exhibition&#xa;at the Liberty Science Center,&#xa;Pi Day">
+                  <div class="circle"></div>
+                </div>
+                <div class="timeline-item-5" data-caption="2015 Parsons x A+E Neworks&#xa;Design Jam&#xa;&#xa;Runner Up: The Most Creative Idea&#xa;for The History Channel">
+                  <div class="circle"></div>
+                </div>
+                <div class="timeline-item-6" data-caption="2013 - 2014 SCULPTOR&#xa;(Seoul, Korea)&#xa;&#xa;Graphic and Web Designer&#xa;Designed the official logo for Sculptor.&#xa;In charge of web design and the&#xa;maintenance of multiple websites.&#xa;Acted as leader of development of design&#xa;for pamphlets and packaging.">
+                  <div class="circle"></div>
+                </div>
+                <div class="timeline-item-7" data-caption="2012-2013 SEIMARZO&#xa;(Seoul, Korea)&#xa;&#xa;Graphic and Web Designer &#xa;Designed several logos for&#xa;Seimarzo shoe company.&#xa;Managed web design and&#xa;website maintenance.">
+                  <div class="circle"></div>
+                </div>
+                <div class="timeline-item-8" data-caption="2011 CICUCINA / DDAENG&#xa;(Seoul, Korea)&#xa;&#xa;Graphic and Web Designer&#xa;Freelancer Managed web design&#xa;and website maintenance.">
+                  <div class="circle"></div>
+                </div>
+                <div class="timeline-item-9" data-caption="2011 INORINO TREE&#xa;(Tokyo, Japan)&#xa;&#xa;Project Assistant:&#xa;Designed product&#xa;and catalog.">
+                  <div class="circle"></div>
+                </div>
+              </div>
+
+
+
+             
+
+            <div class="card">
+                <!-- Custom information -->
+                <div class="about">
+             
+                  <p class="lead">Skills & Languages</p><br>
+                  <span class ="leadDesc">• KOREAN: Native<br>• JAPANESE: Native<br>• ENGLISH: Working Proficiency</span>
+                  
+                  
+                </div>
+                <br>
+                <!-- Canvas for Chart.js -->
+                <canvas id="canvas" width="600" height="400" ></canvas>
+              </div>
+
+
+
+             <br><br><br><br><br><br><br><br><br><br><br><br>
+             
+              <span class="descripinfo">lees569@newschool.edu<br>31st ST, Broadway, NY</span>
+              <a href="https://github.com/lees569" target="_blank"><div class="icon fa fa-github" id ="desBox"></div></a><a href="https://www.linkedin.com/in/seung-whan-lee-a46525119/" target="_blank"><div class="icon fa fa-linkedin-square" id ="desBox"></div></a>
+            
+          </section>  
+
+
+
+
+
+
+          </div>
+          <div class="page" id="p2">
+            <div class="v-fs">
+                  <div class="v-fs-content">
+                            <div class="v-fs-page page-1">
+                                 <div class="tiles">
+                                    <a href="#popup1"><div class="tile" data-scale="1.02" data-image="img/sum1.jpg">
+                                                          <div>UI></div>
+                                                      </div></a>
+                                                  <div class="tile" data-scale="1.02" data-image="img/t1.jpg"></div>
+                                                  <div class="tile" data-scale="1.02" data-image="img/ho1.jpg"></div>
+
+
+                                
+                                 </div>
+                            </div> 
+                            <div class="v-fs-page page-2"> 
+                                     <div class="tiles">            
+                                              <div class="tile" data-scale="1.02" data-image="img/pi1.jpg"></div>
+                                              <div class="tile" data-scale="1.02" data-image="img/qa1.jpg"></div>
+                                              <div class="tile" data-scale="1.02" data-image="img/sh1.jpg"></div>
+                                      </div>
+
+
+                            </div>  
+
+                 </div>
+             </div>
+        </div>
+
+          <div class="page" id="p3">
+
+              <div class="v-fs">
+                  <div class="v-fs-content">
+                            <div class="v-fs-page page-1">
+                                 <div class="tiles">
+                                    <a href="#popup1"><div class="tile" data-scale="1.02" data-image="img/1.jpg"></div></a>
+                                                  <div class="tile" data-scale="1.02" data-image="img/2.jpg"></div>
+                                                  <div class="tile" data-scale="1.02" data-image="img/2.jpg"></div>
+
+
+                                
+                                 </div>
+                            </div> 
+                            <div class="v-fs-page page-2"> 
+                                     <div class="tiles">            
+                                              <div class="tile" data-scale="1.02" data-image="img/2.jpg"></div>
+                                              <div class="tile" data-scale="1.02" data-image="img/2.jpg"></div>
+                                              <div class="tile" data-scale="1.02" data-image="img/2.jpg"></div>
+                                      </div>
+
+
+                            </div>  
+
+                            <div class="v-fs-page page-3"> 
+                                     <div class="tiles">            
+                                              <div class="tile" data-scale="1.02" data-image="img/2.jpg"></div>
+                                              <div class="tile" data-scale="1.02" data-image="img/2.jpg"></div>
+                                              <div class="tile" data-scale="1.02" data-image="img/2.jpg"></div>
+                                      </div>
+
+
+                            </div>  
+
+                  </div>
+             </div>
+
+          </div> 
+
+          <div class="page" id="p5">
+             
+
+          </div> 
+
+         
+
+          <div class="page" id="p4">
+
+              
+
+                                 <div class="tiles">
+                                                  <div class="tile" data-scale="1.02" data-image="img/proactiv.jpg"></div>
+                                                  <div class="tile" data-scale="1.02" data-image="img/bodywild.jpg"></div>
+                                                  <div class="tile" data-scale="1.02" data-image="img/tombow.jpg"></div>
+
+
+                                
+                                 </div>
+
+
+
+
+          </div>
+
+          <div id="popup1" class="overlay">
+              <div class="popup">
+                <h2>Here i am</h2>
+                <a class="close" href="#t2">x</a>
+
+
+                <div class="content">
+                  Thank to pop me out of that button, but now i'm done so you can close this window.<br><br> Thank to pop me out of that button, but now i'm done so you can close this window.<br><br> Thank to pop me out of that button, but now i'm done so you can close this window.
+                </div>
+                
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+              
+
+
+
+
+  </div>
+</div>
+  
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js'></script>
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
