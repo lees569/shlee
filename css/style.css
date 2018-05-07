@@ -77,6 +77,8 @@
   bottom: 0;
   left: 0;
   right: 0;
+  width: 95%;
+  height: 100%
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 800ms;
   visibility: hidden;
@@ -89,14 +91,15 @@
 
 .popup {
 /*  margin: 70px auto;*/
-  padding: 15%;
-  background: #F6FDFD;
-  border-radius: 5px;
+  padding: 0 0 0 10%;
+  background: white;
+  /*border-radius: 5px;*/
   width: 100%;
   height: 100%;
   position: relative;
   transition: all 5s ease-in-out;
-  overflow-y: scroll; 
+/*  overflow: scroll;*/
+/*  overflow-y: hidden; */
   color: black;
 }
 
@@ -119,9 +122,11 @@
   color: gray;
 }
 .popup .content {
-  max-height: 50%;
+  max-height: 100%;
   overflow: auto;
+
 }
+
 
 @media screen and (max-width: 700px){
 
@@ -138,7 +143,8 @@
   position: relative;
   width: 300px;
   float: right;
-  top: 30px;
+  top: 100px;
+  left: 300px;
 
 /*  padding-right: 250px;*/
 }
@@ -312,25 +318,211 @@
 
 .card .about h3,
 .card .about .lead {
-  font-weight: 300;
+ /* font-weight: 300;*/
   margin: 0;
 }
 
-.card .about h3 {
+/*.card .about h3 {
   font-size: 24px;
-}
+}*/
 
 .card .about .lead {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   color: #777777;
 }
 .leadDesc{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 11px;
  
-   color: #aaa;
+  color: #aaa;
+}
+.adprojectTitle{
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  text-align: left;
+
+  padding-left: 300px;
+/*  padding-right: 150px;*/
+}
+
+.projectTitle{
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  text-align: left;
+  padding-top: 150px;
+  padding-left: 300px;
+/*  padding-right: 150px;*/
+}
+#projectUnderline{
+  position: relative;
+
+  width: 40px;
+  height: 3px;
+  margin-top: 30px;
+  margin-left:300px;
+  background-color: #000000;
+
+
+/*  padding-right: 150px;*/
 }
 
 
-/*.profile{
+
+.projectOverview{
   position: relative;
-  float: right;
-}*/
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 700px;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 300px;
+  color: #777777;
+/*  padding-right: 150px;*/
+}
+
+
+.prjectRow
+{
+    display: table;
+    width: 100%;
+
+  
+
+}
+.categ
+{
+    display: table-cell;
+    padding-top: 50px;
+    padding-left: 300px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 2;
+}
+
+.categDetail{
+  display: table-cell;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 2;
+  width: 500px;
+  text-align: left;
+  padding-left: 100px;
+  color: #000000;
+
+/*  padding-right: 150px;*/
+}
+.blackLine{
+
+  width: 100%;
+  height: 150px;
+  border-color: #e5e5e5;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px; 
+
+}
+
+
+.video{
+
+/*  display: block;*/
+    width: 97%;
+    height: 450px;
+    margin: 0 auto;
+}
+.images{
+
+  display: block;
+    width: 90%;
+ 
+    margin: 0 auto;
+}
+
+
+div.column {
+  width: 300px;
+
+  display: block;
+
+ 
+  margin: 20% 34%;
+}
+
+/* Contact Button */
+.sidebar_contact_block {
+color: #000000;
+font-family: 'Lato', sans-serif;
+font-size: 220%;
+font-weight: 300;
+
+letter-spacing: -.04em;
+display: block;
+padding: 1em .5em 1em .5em;
+background-color: #FFF;
+
+border-radius: 10pt;
+background-position: 92% 110%;
+background-size: 32%;
+background-repeat: no-repeat;
+-webkit-transition: background-position .25s, background-color .25s, background-size .25s;
+transition: background-position .25s, background-color .25s, background-size .25s;
+}
+
+.sidebar_contact_block:hover {
+background-color: #FFF;
+color: gray;
+
+background-position: 110% 30%;
+background-size: 20%;
+}
+
+.sidebar_contact_block h4 {
+font-family: 'Lato', sans-serif;
+font-size: .4em;
+letter-spacing: -.02em;
+font-weight: 400;
+margin-top: .2em;
+margin-bottom: .4em;
+}
+
+.sidebar_contact_block h3 {
+font-family: 'Lato', sans-serif;
+font-size: 1.5em;
+letter-spacing: -.02em;
+text-transform: uppercase;
+font-weight: 800;
+line-height: 1em;
+margin: 0 0 .2em 0;
+}
+
+.sidebar_contact_block hr {
+margin: 0;
+width: 40%;
+border-bottom: 1px solid #ababf2;
+border-top: 0;
+transition: width .25s;
+-webkit-transition: width .25s;
+}
+
+.sidebar_contact_block hr.short {
+  width: 0;
+}
+
+.sidebar_contact_block:hover hr {
+  width: 0;
+}
+
+.sidebar_contact_block:hover hr.short {
+  width: 90%;
+}

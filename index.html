@@ -53,11 +53,11 @@ html, body, .page {
 
 
 
-#p1 { background: #F6FDFD; }
+#p1 { background: white; }
 #p2 { background: white; }
-#p3 { background: #F6FDFD; }
+#p3 { background: white; }
 #p4 { background: white; }
-#p5 { background: #F6FDFD; }
+#p5 { background: white; }
 
 
 #t2:target #p2,
@@ -165,7 +165,7 @@ a {
 
 .title {
 
-  padding-right: 145px;
+  padding-right: 140px;
   font-size: 18px;
   text-align: right;
 }
@@ -177,7 +177,7 @@ a {
 
   text-align: right;
   padding-top: 15px;
-  padding-right: 150px;
+  padding-right: 140px;
 }
 .jobTitle2{
 /*  font-family: 'Arial Black'*/
@@ -185,7 +185,7 @@ a {
   font-weight: 700;
   font-size: 27.5px;
   text-align: right;
-  padding-right: 150px;
+  padding-right: 140px;
 }
 
 .hint {
@@ -197,32 +197,37 @@ a {
 }
 
 #desBox{
-
+  display: block;
   width: 30px;
   height: 30px;
   position: relative;
   float: right;
-  top:30px;
+  top:130px;
   left: 140px;
 
 
 }
 
 .descrip{
-
-  font-size: 13px;
+  display: block;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
   line-height: 1.5;
-  font-weight: 100;
-  text-align: right;
+/*  font-weight: 100;*/
+  text-align: left;
   color: #aaa;
+  float: right;
 }
 
 .descripinfo{
-
+  display: block;
   font-size: 11px;
   text-align: right;
   float: right;
   color:black;
+  margin-top:100px;
 }
 
 .line-trough {
@@ -370,11 +375,9 @@ a {
                   <div class="v-fs-content">
                             <div class="v-fs-page page-1">
                                  <div class="tiles">
-                                    <a href="#popup1"><div class="tile" data-scale="1.02" data-image="img/sum1.jpg">
-                                                          <div>UI></div>
-                                                      </div></a>
-                                                  <div class="tile" data-scale="1.02" data-image="img/t1.jpg"></div>
-                                                  <div class="tile" data-scale="1.02" data-image="img/ho1.jpg"></div>
+                                    <a href="#popup1"><div class="tile" data-scale="1.02" data-image="img/sum1.jpg"></div></a>
+                                    <a href="#popup2"><div class="tile" data-scale="1.02" data-image="img/t1.jpg"></div></a>
+                                    <a href="#popup3"><div class="tile" data-scale="1.02" data-image="img/ho1.jpg"></div></a>
 
 
                                 
@@ -382,9 +385,9 @@ a {
                             </div> 
                             <div class="v-fs-page page-2"> 
                                      <div class="tiles">            
-                                              <div class="tile" data-scale="1.02" data-image="img/pi1.jpg"></div>
-                                              <div class="tile" data-scale="1.02" data-image="img/qa1.jpg"></div>
-                                              <div class="tile" data-scale="1.02" data-image="img/sh1.jpg"></div>
+                                              <a href="#popup4"><div class="tile" data-scale="1.02" data-image="img/pi1.jpg"></div></a>
+                                              <a href="#popup5"><div class="tile" data-scale="1.02" data-image="img/qa1.jpg"></div></a>
+                                              <a href="#popup6"><div class="tile" data-scale="1.02" data-image="img/sh1.jpg"></div></a>
                                       </div>
 
 
@@ -400,9 +403,9 @@ a {
                   <div class="v-fs-content">
                             <div class="v-fs-page page-1">
                                  <div class="tiles">
-                                    <a href="#popup1"><div class="tile" data-scale="1.02" data-image="img/of1.jpg"></div></a>
-                                                  <div class="tile" data-scale="1.02" data-image="img/of2.jpg"></div>
-                                                  <div class="tile" data-scale="1.02" data-image="img/sp1.jpg"></div>
+                                    <a href="#popup7"><div class="tile" data-scale="1.02" data-image="img/of1.jpg"></div></a>
+                                    <a href="#popup8"><div class="tile" data-scale="1.02" data-image="img/of2.jpg"></div></a>
+                                    <a href="#popup9"><div class="tile" data-scale="1.02" data-image="img/sp1.jpg"></div></a>
 
 
                                 
@@ -410,9 +413,9 @@ a {
                             </div> 
                             <div class="v-fs-page page-2"> 
                                      <div class="tiles">            
-                                              <div class="tile" data-scale="1.02" data-image="img/drum.jpg"></div>
-                                              <div class="tile" data-scale="1.02" data-image="img/fl1.jpg"></div>
-                                              <div class="tile" data-scale="1.02" data-image="img/al1.jpg"></div>
+                                        <a href="#popup10"><div class="tile" data-scale="1.02" data-image="img/drum.jpg"></div></a>
+                                        <a href="#popup11"><div class="tile" data-scale="1.02" data-image="img/fl1.jpg"></div></a>
+                                        <a href="#popup12"><div class="tile" data-scale="1.02" data-image="img/al1.jpg"></div></a>
                                       </div>
 
 
@@ -427,6 +430,15 @@ a {
 
           <div class="page" id="p5">
              
+             <div class="column">
+                <a href="mailto:lees569@newschool" class="sidebar_contact_block">
+                  <hr class="short">
+                  <h4>Just Say Hello!</h4>
+                  <h3>Let's<br>Talk</h3>
+                  <hr>
+                </a>
+              </div>
+
 
           </div> 
 
@@ -437,9 +449,9 @@ a {
               
 
                                  <div class="tiles">
-                                                  <div class="tile" data-scale="1.02" data-image="img/proactiv.jpg"></div>
-                                                  <div class="tile" data-scale="1.02" data-image="img/bodywild.jpg"></div>
-                                                  <div class="tile" data-scale="1.02" data-image="img/tombow.jpg"></div>
+                                       <a href="#popup13"><div class="tile" data-scale="1.02" data-image="img/proactiv.jpg"></div></a>
+                                       <a href="#popup14"><div class="tile" data-scale="1.02" data-image="img/bodywild.jpg"></div></a>
+                                       <a href="#popup15"><div class="tile" data-scale="1.02" data-image="img/tombow.jpg"></div></a>
 
 
                                 
@@ -451,6 +463,89 @@ a {
           </div>
 
           <div id="popup1" class="overlay">
+              <div class="popup">
+                
+                <div class="content"> <img src = "img/sbuddiemain.png" width="1305px" ><a class="close" href="#t2">x</a>
+                
+                  
+                  <div class = "projectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  <div class = "projectTitle">OVERVIEW</div>
+
+
+
+
+              </div>
+                
+
+
+
+
+
+            </div>
+          </div>
+
+          <div id="popup2" class="overlay">
+              <div class="popup">
+
+                <div class="content"> <img src = "img/tripmain.png" width="1305px" ><a class="close" href="#t2">x</a>
+                
+                  
+                  <div class = "projectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  <div class = "projectTitle">OVERVIEW</div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div id="popup3" class="overlay">
+              <div class="popup">
+                
+                
+                  <div class="content"> <img src = "img/barammain.png" width="1305px" ><a class="close" href="#t2">x</a>
+                
+                  
+                  <div class = "projectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  <div class = "projectTitle">OVERVIEW</div>
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+          <div id="popup4" class="overlay">
               <div class="popup">
                 <h2>Here i am</h2>
                 <a class="close" href="#t2">x</a>
@@ -465,22 +560,329 @@ a {
 
 
 
-        </div>
-      </div>
+            </div>
+          </div>
+
+          <div id="popup5" class="overlay">
+              <div class="popup">
+                <h2>Here i am</h2>
+                <a class="close" href="#t2">x</a>
+
+
+                <div class="content">
+                  Thank to pop me out of that button, but now i'm done so you can close this window.<br><br> Thank to pop me out of that button, but now i'm done so you can close this window.<br><br> Thank to pop me out of that button, but now i'm done so you can close this window.
+                </div>
+                
 
 
 
-    </div>
 
+
+            </div>
+          </div>
+
+          <div id="popup6" class="overlay">
+              <div class="popup">
+                <h2>Here i am</h2>
+                <a class="close" href="#t2">x</a>
+
+
+                <div class="content">
+                  Thank to pop me out of that button, but now i'm done so you can close this window.<br><br> Thank to pop me out of that button, but now i'm done so you can close this window.<br><br> Thank to pop me out of that button, but now i'm done so you can close this window.
+                </div>
+                
+
+
+
+
+
+            </div>
+          </div>
+
+
+          <div id="popup7" class="overlay">
+              <div class="popup">
+                
+                
+                  <div class="content" ><iframe class ="video" src="https://youtube.com/embed/mWY1kj_5iNo"></iframe>
+                   <a class="close" href="#t3">x</a>
+                
+                  
+                  <div class = "projectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  <div class = "projectTitle">OVERVIEW</div>
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+
+          <div id="popup8" class="overlay">
+              <div class="popup">
+                
+                
+                <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/0bprMXoYcJk"></iframe>
+                    <a class="close" href="#t3">x</a>
+                
+                  
+                  <div class = "projectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  <div class = "projectTitle">OVERVIEW</div>
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+
+          <div id="popup9" class="overlay">
+              <div class="popup">
+                
+                
+                <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/vuRXn7YF5vU"></iframe>
+                    <a class="close" href="#t3">x</a>
+                
+                  
+                  <div class = "projectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  <div class = "projectTitle">OVERVIEW</div>
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+          <div id="popup10" class="overlay">
+              <div class="popup">
+                
+                
+                <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/Apo3fWQx4Mo"></iframe>
+                    
+                    </div><a class="close" href="#t3">x</a>
+                
+                  
+                  <div class = "projectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  <div class = "projectTitle">OVERVIEW</div>
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+          <div id="popup11" class="overlay">
+              <div class="popup">
+                
+                
+                <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/AFnKZlLd_FY"></iframe>
+                    <a class="close" href="#t3">x</a>
+                
+                  
+                  <div class = "projectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  <div class = "projectTitle">OVERVIEW</div>
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+          <div id="popup12" class="overlay">
+              <div class="popup">
+                
+                
+                <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/zeolleLHZaw"></iframe>
+                    <a class="close" href="#t3">x</a>
+                
+                  
+                  <div class = "projectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  <div class = "projectTitle">OVERVIEW</div>
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+          <div id="popup13" class="overlay">
+              <div class="popup">
+                
+                
+                  <div class="content"> <img class="images" src = "img/pro1.jpg"  ><img class="images" src = "img/pro2.jpg"  ><a class="close" href="#t4">x</a>
+                
+                  
+                  <div class = "adprojectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+          <div id="popup14" class="overlay">
+              <div class="popup">
+                
+                
+                  <div class="content"><img class="images" src = "img/body1.jpg"  ><img class="images" src = "img/body2.jpg"  ><a class="close" href="#t4">x</a>
+                
+                  
+                  <div class = "adprojectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                 
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+          <div id="popup15" class="overlay">
+              <div class="popup">
+                
+                
+                  <div class="content"><img class="images" src = "img/tom2.jpg"  ><img class="images" src = "img/tom3.jpg"  ><a class="close" href="#t4">x</a>
+                
+                  
+                  <div class = "adprojectTitle">OVERVIEW</div>
+                  <div id= "projectUnderline"></div>
+                  <div class = "projectOverview">When you are planning to travel alone to where you’ve never been before, how do you feel? We are usually excited, but we also feel a fear of unfamiliar places because there are many considerations we should think about, such as safety, weather, and communication in that location. I remembered that I was excited but afraid of traveling alone the first time I visited NYC.</div>
+                  <div class = "projectRow">
+                      <div class = "categ">CATEGORY<br>DATE<br>TOOL</div>
+                      <div class = "categDetail">Mobile Development, UI/UX Design, Product Design<br>December 10, 2015<br>Framer, Swift/Xcode, Adobe Creative Suite</div>
+                  </div>
+                  
+                  <div class ="blackLine"></div>
+                  
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+
+
+        
 
               
 
 
 
-
-  </div>
-</div>
-  
+         </div>
+      </div>
+    </div>
+   </div>
+</div> 
      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js'></script>
