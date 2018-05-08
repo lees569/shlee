@@ -106,7 +106,7 @@
 .popup h2 {
   margin-top: 0;
   color: black;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: lato, sans-serif;
 }
 .popup .close {
   position: fixed;
@@ -116,10 +116,10 @@
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: lightgray;
 }
 .popup .close:hover {
-  color: gray;
+  color: #aba9f4;
 }
 .popup .content {
   max-height: 100%;
@@ -127,7 +127,43 @@
 
 }
 
+a:hover{
 
+  color:#aba9f4;
+
+}
+
+
+.scrollfrom {
+/*  display: block;*/
+  font-family: lato, sans-serif;
+
+  position: absolute;
+ /* float:  center;*/
+  top:13%;
+  right: 5.2%;
+  transition: all 200ms;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #aba9f4;
+
+}
+.scrollto {
+/*  display: block;*/
+  font-family: lato, sans-serif;
+  transition: all 200ms;
+  position: absolute;
+  float: left;
+  top:13%;
+  left: 0;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #aba9f4;
+
+}
 @media screen and (max-width: 700px){
 
   .popup{
@@ -374,7 +410,19 @@
 }
 
 
-
+.projectOverviewTitle{
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 700px;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 300px;
+  color: #777777;
+/*  padding-right: 150px;*/
+}
 .projectOverview{
   position: relative;
   font-family: 'Lato', sans-serif;
@@ -562,4 +610,24 @@ transition: width .25s;
   width: 90%;
 }
 
+#erro_page_size {
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  background:#3f3f3f;
+  z-index: 99999;
+}
 
+#erro_page_size .erro_msg{
+  position:fixed;
+  height: 50px;
+  width: 300px;
+  color:#fff;
+  font-size: 20px;
+  font-family: 'Gilroy';
+  text-align: center;
+  top:50%;
+  margin-top: -25px;
+  left:50%;
+  margin-left: -150px;
+}
