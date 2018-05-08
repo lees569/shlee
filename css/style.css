@@ -110,8 +110,8 @@
 }
 .popup .close {
   position: fixed;
-  top: 2%;
-  right: 2%;
+  top: 6%;
+  right: 4%;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
@@ -126,7 +126,11 @@
   overflow: auto;
 
 }
+a{
 
+color:#232323;
+
+}
 a:hover{
 
   color:#aba9f4;
@@ -504,6 +508,7 @@ a:hover{
     height: 450px;
     margin: 0 auto;
     border:0;
+    
 }
 .video{
 
@@ -538,8 +543,8 @@ div.column {
 
   display: block;
 
- 
-  margin: 20% 34%;
+   margin: 20% 34%;
+
 }
 
 /* Contact Button */
@@ -607,20 +612,11 @@ transition: width .25s;
 }
 
 .sidebar_contact_block:hover hr.short {
-  width: 90%;
+  width: 60%;
 }
 
-.desBoxcontact{
 
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  float: middle;
-
-
-
-}
-.erro_msg{
+.smallWindow{
   position:fixed;
 
   height: 50px;
