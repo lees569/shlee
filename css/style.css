@@ -478,7 +478,13 @@
  
   margin: 0 auto;
 }
+.bottomimages{
 
+  display: block;
+  width: 56%;
+  float: right;
+  margin: 0 auto;
+}
 div.column {
   width: 300px;
 
