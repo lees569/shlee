@@ -245,7 +245,3 @@ window.chart = new Chart(document.getElementById("canvas"), {
 
 
 
-
-
-
-

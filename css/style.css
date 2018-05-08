@@ -610,24 +610,38 @@ transition: width .25s;
   width: 90%;
 }
 
-#erro_page_size {
-  position:fixed;
-  height: 100%;
-  width: 100%;
-  background:#3f3f3f;
-  z-index: 99999;
-}
+.desBoxcontact{
 
-#erro_page_size .erro_msg{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  float: middle;
+
+
+
+}
+.erro_msg{
   position:fixed;
+
   height: 50px;
   width: 300px;
-  color:#fff;
-  font-size: 20px;
-  font-family: 'Gilroy';
+  color:black;
+  font-size: 16px;
+  font-family: 'lato' sans-serif;
+  font-weight: 100;
   text-align: center;
   top:50%;
   margin-top: -25px;
   left:50%;
   margin-left: -150px;
 }
+
+@media all and (min-width: 0px) and (max-width: 1300px) {
+  .ct{
+    display: none;
+  }
+
+}
+
+
+
