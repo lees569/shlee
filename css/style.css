@@ -1,3 +1,78 @@
+#loadingman{
+
+
+  width: 100%;
+  height:100%;
+  background-color: white;
+  position: fixed;
+  margin:-0.7%;
+/*  opacity: 0.8;*/
+  z-index: 99999;
+}
+  
+/*
+.preload{
+
+  width:100%;
+  height: 100%;
+  background: #333;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+
+
+}
+
+
+#loader-frame {
+
+  width: 70px;
+  height: 70px;
+  margin: 350px auto;
+  position: relative;
+}
+
+
+.loader1, .loader2 {
+  position: absolute;
+  border:5px solid transparent;
+  border-radius: 50%;
+
+}
+
+.loader1 {
+
+  width: 70px;
+  height: 70px;
+  border-top: 5px solid azure;
+  border-bottom: 5px solid azure;
+  animation: clockwisespin 2s linear 3;
+
+}
+.loader2 {
+
+  width: 60px;
+  height: 60px;
+  border-top: 5px solid darkturquoise;
+  border-bottom: 5px solid darkturquoise;
+  top: 5px; left:5px;
+  animation: anticlockwisespin 2s linear 3;
+
+}
+@keyframes clockwisespin{
+
+
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@keyframes anticlockwisespin{
+
+
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-360deg);}
+}
+*/
 
 .tiles {
     position: relative;
@@ -30,6 +105,8 @@
     background-size: cover;
     transition: transform .5s ease-out;
   }
+
+
 
 .v-fs {
   height: 100vh;
@@ -546,7 +623,14 @@ div.column {
    margin: 20% 34%;
 
 }
+.loadinggif{
 
+  display: block;
+  width: 10%;
+
+ 
+  margin: 25% auto;
+}
 /* Contact Button */
 .sidebar_contact_block {
 color: #000000;

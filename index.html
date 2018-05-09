@@ -35,6 +35,7 @@ html, body, .page {
 
 * {
   font-family: 'open sans', 'lato', 'helvetica', sans-serif;
+
 }
 
 
@@ -61,10 +62,10 @@ html, body, .page {
 #p5 { background: white; }
 
 
-#t2:target #p2,
-#t3:target #p3,
-#t4:target #p4,
-#t5:target #p5 {
+#interaction-design:target #p2,
+#playground:target #p3,
+#advertising:target #p4,
+#contact:target #p5 {
   transform: translateX(-190%);
   -webkit-transform: translateX(-190%);
   -moz-transform: translateX(-190%);
@@ -72,17 +73,17 @@ html, body, .page {
   transition-delay: .4s !important;
 }
 /*when click - transition*/
-#t2:target #p1, 
-#t3:target #p1,
-#t4:target #p1,
-#t5:target #p1{
+#interaction-design:target #p1, 
+#playground:target #p1,
+#advertising:target #p1,
+#contact:target #p1{
   background: white;
 }
 
-#t2:target #p1 .icon, 
-#t3:target #p1 .icon,
-#t4:target #p1 .icon,
-#t5:target #p1 .icon {
+#interaction-design:target #p1 .icon, 
+#playground:target #p1 .icon,
+#advertising:target #p1 .icon,
+#contact:target #p1 .icon {
   -webkit-filter: blur(3px);
 }
 
@@ -100,10 +101,10 @@ ul .icon:hover {
   line-height: 2;
 }
 
-#t2:target ul .icon,
-#t3:target ul .icon,
-#t4:target ul .icon,
-#t5:target ul .icon{
+#interaction-design:target ul .icon,
+#playground:target ul .icon,
+#advertising:target ul .icon,
+#contact:target ul .icon{
   transform: scale(.6);
   -webkit-transform: scale(.6);
   -moz-transform: scale(.6);
@@ -111,10 +112,10 @@ ul .icon:hover {
   transition-delay: .25s;
 }
 
-#t2:target #dos,
-#t3:target #tres,
-#t4:target #cuatro,
-#t5:target #cinco {
+#interaction-design:target #dos,
+#playground:target #tres,
+#advertising:target #cuatro,
+#contact:target #cinco {
   transform: scale(1) !important;
   -webkit-transform: scale(1) !important;
   -moz-transform: scale(1) !important;
@@ -277,23 +278,29 @@ a {
 
 
 <body>
-<div class="smallWindow">Sorry, Small window doesn't support yet!</div>
+  <div id = "loadingman"><img class ="loadinggif"  src="img/loading.gif"></div>
+
+  <div class="smallWindow">Sorry, Small window doesn't support yet!</div>
+      
+<!--      <div id="loader-frame">
+          <div class = "loader1" id ="loader1"></div>
+          <div class = "loader2" id ="loader2"></div>
+         
+      </div> -->
 
 
-
-
-  <div class="ct" id="t1">
-  <div class="ct" id="t2">
-    <div class="ct" id="t3">
-      <div class="ct" id="t4">
-         <div class="ct" id="t5">
+  <div class="ct" id="home">
+  <div class="ct" id="interaction-design">
+    <div class="ct" id="playground">
+      <div class="ct" id="advertising">
+         <div class="ct" id="contact">
           <ul id="menu">
-            <a href="#t1"><li class="icon fa fa-smile-o" id="uno"><span class="hint"><br>SH.LEE</span></li></a>
-            <a href="#t2"><li class="icon fa fa-mobile" id="dos"><span class="hint"><br>INTERACTION<br>DESIGN<br>2015-2017</span></li></a>
+            <a href="#home"><li class="icon fa fa-smile-o" id="uno"><span class="hint"><br>SH.LEE</span></li></a>
+            <a href="#interaction-design"><li class="icon fa fa-mobile" id="dos"><span class="hint"><br>INTERACTION<br>DESIGN<br>2015-2017</span></li></a>
             
-            <a href="#t3"><li class="icon fa fa-gamepad" id="tres"><span class="hint"><br>PLAYGROUND:<br>QUICK PROTOTYPING<br>2015-2017</span></li></a>
-            <a href="#t4"><li class="icon fa fa-lightbulb-o" id="cuatro"><span class="hint"><br>ADVERTISING<br>2010-2011</span></li></a>
-            <a href="#t5"><li class="icon fa fa-pencil" id="cinco"><span class="hint"><br>CONTACT</span></li></a>
+            <a href="#playground"><li class="icon fa fa-gamepad" id="tres"><span class="hint"><br>PLAYGROUND:<br>QUICK PROTOTYPING<br>2015-2017</span></li></a>
+            <a href="#advertising"><li class="icon fa fa-lightbulb-o" id="cuatro"><span class="hint"><br>ADVERTISING<br>2010-2011</span></li></a>
+            <a href="#contact"><li class="icon fa fa-pencil" id="cinco"><span class="hint"><br>CONTACT</span></li></a>
           </ul>
 
 
@@ -379,9 +386,9 @@ a {
 
                                  <div class="tiles">
                                   
-                                    <a href="#popup1"><div class="tile" data-scale="1.02" data-image="img/sum1.jpg"></div></a>
-                                    <a href="#popup2"><div class="tile" data-scale="1.02" data-image="img/t1.jpg"></div></a>
-                                    <a href="#popup3"><div class="tile" data-scale="1.02" data-image="img/ho1.jpg"></div></a>
+                                    <a href="#sumbuddie"><div class="tile" data-scale="1.02" data-image="img/sum1.jpg"></div></a>
+                                    <a href="#tripus"><div class="tile" data-scale="1.02" data-image="img/t1.jpg"></div></a>
+                                    <a href="#baram"><div class="tile" data-scale="1.02" data-image="img/ho1.jpg"></div></a>
 
                                        <div class ="scrollfrom" >Scroll⏤</div>
                                 
@@ -390,9 +397,9 @@ a {
                             </div> 
                             <div class="v-fs-page page-2"> 
                                      <div class="tiles">            
-                                              <a href="#popup4"><div class="tile" data-scale="1.02" data-image="img/sh1.jpg"></div></a>
-                                              <a href="#popup5"><div class="tile" data-scale="1.02" data-image="img/qa1.jpg"></div></a>
-                                              <a href="#popup6"><div class="tile" data-scale="1.02" data-image="img/pi1.jpg"></div></a>
+                                              <a href="#schadenfreude"><div class="tile" data-scale="1.02" data-image="img/sh1.jpg"></div></a>
+                                              <a href="#qnh"><div class="tile" data-scale="1.02" data-image="img/qa1.jpg"></div></a>
+                                              <a href="#lybyrinth"><div class="tile" data-scale="1.02" data-image="img/pi1.jpg"></div></a>
 
                                            <!-- <div class ="scrollto" >⏤Scroll</div>   --> 
                                       </div>
@@ -410,9 +417,9 @@ a {
                   <div class="v-fs-content">
                             <div class="v-fs-page page-1">
                                  <div class="tiles">
-                                    <a href="#popup7"><div class="tile" data-scale="1.02" data-image="img/of1.jpg"></div></a>
-                                    <a href="#popup8"><div class="tile" data-scale="1.02" data-image="img/of2.jpg"></div></a>
-                                    <a href="#popup9"><div class="tile" data-scale="1.02" data-image="img/sp1.jpg"></div></a>
+                                    <a href="#ellips-line"><div class="tile" data-scale="1.02" data-image="img/of1.jpg"></div></a>
+                                    <a href="#loop"><div class="tile" data-scale="1.02" data-image="img/of2.jpg"></div></a>
+                                    <a href="#led-speaker"><div class="tile" data-scale="1.02" data-image="img/sp1.jpg"></div></a>
 
                                     <div class ="scrollfrom" >Scroll⏤</div>
                                 
@@ -420,9 +427,9 @@ a {
                             </div> 
                             <div class="v-fs-page page-2"> 
                                      <div class="tiles">            
-                                        <a href="#popup10"><div class="tile" data-scale="1.02" data-image="img/drum.jpg"></div></a>
-                                        <a href="#popup11"><div class="tile" data-scale="1.02" data-image="img/fl1.jpg"></div></a>
-                                        <a href="#popup12"><div class="tile" data-scale="1.02" data-image="img/al1.jpg"></div></a>
+                                        <a href="#drum-kit"><div class="tile" data-scale="1.02" data-image="img/drum.jpg"></div></a>
+                                        <a href="#flower-pot"><div class="tile" data-scale="1.02" data-image="img/fl1.jpg"></div></a>
+                                        <a href="#alt-controller"><div class="tile" data-scale="1.02" data-image="img/al1.jpg"></div></a>
                                       </div>
 
 
@@ -461,9 +468,9 @@ a {
               
 
                                  <div class="tiles">
-                                       <a href="#popup13"><div class="tile" data-scale="1.02" data-image="img/proactiv.jpg"></div></a>
-                                       <a href="#popup14"><div class="tile" data-scale="1.02" data-image="img/bodywild.jpg"></div></a>
-                                       <a href="#popup15"><div class="tile" data-scale="1.02" data-image="img/tombow.jpg"></div></a>
+                                       <a href="#proactiv"><div class="tile" data-scale="1.02" data-image="img/proactiv.jpg"></div></a>
+                                       <a href="#bodywild"><div class="tile" data-scale="1.02" data-image="img/bodywild.jpg"></div></a>
+                                       <a href="#tombow"><div class="tile" data-scale="1.02" data-image="img/tombow.jpg"></div></a>
 
 
                                 
@@ -474,10 +481,10 @@ a {
 
           </div>
 
-          <div id="popup1" class="overlay">
+          <div id="sumbuddie" class="overlay">
               <div class="popup">
                 
-                <div class="content"> <img src = "img/sbuddiemain.png" width="1305px" ><a class="close" href="#t2">x</a>
+                <div class="content"> <img src = "img/summain.png" width="1305px" ><a class="close" href="#interaction-design">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -496,6 +503,8 @@ a {
                   <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="300" height="500" src="https://framer.cloud/huyFC/"></iframe> -->
                   <div class ="blackLine"></div>
 
+                  <a class="close" href="#interaction-design">x</a>
+
               </div>
                   
 
@@ -506,10 +515,10 @@ a {
             </div>
           </div>
 
-          <div id="popup2" class="overlay">
+          <div id="tripus" class="overlay">
               <div class="popup">
 
-                <div class="content"> <img src = "img/tripmain.png" width="1305px" ><a class="close" href="#t2">x</a>
+                <div class="content"> <img src = "img/tripmain.png" width="1305px" >
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -590,16 +599,16 @@ a {
                   <img class="pimages" src = "img/business.png">
                   <div class ="blackLine"></div>
 
-
+                  <a class="close" href="#interaction-design">x</a>
               </div>
             </div>
           </div>
 
-          <div id="popup3" class="overlay">
+          <div id="baram" class="overlay">
               <div class="popup">
                 
                 
-                  <div class="content"> <img src = "img/barammain.png" width="1305px" ><a class="close" href="#t2">x</a>
+                  <div class="content"> <img src = "img/barammain.png" width="1305px" >
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -677,7 +686,7 @@ a {
                   <iframe class ="uivideo" src="https://www.youtube.com/embed/EP-fClNY6zw" frameborder="0"></iframe>
                   <div class ="blackLine"></div>
               
-
+                  <a class="close" href="#interaction-design">x</a>
               </div>
 
 
@@ -686,9 +695,9 @@ a {
             </div>
           </div>
 
-          <div id="popup4" class="overlay">
+          <div id="schadenfreude" class="overlay">
               <div class="popup">
-               <div class="content"> <img src = "img/sha.png" width="1305px" ><a class="close" href="#t2">x</a>
+               <div class="content"> <img src = "img/sha.png" width="1305px" ><a class="close" href="#interaction-design">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -699,7 +708,7 @@ a {
                       <div class = "categDetail">Game Design and Machanic, Physical Computing, Interaction Design<br>December 20, 2016, 1 Months<br>Arduino, Processing, HTML&CSS, Adobe Creative Suite<br>Courtney Snavely: Team lead, Game development, Coding<br>Paul Frank Mallon: Hardware and Game Design<br>Mikei Huang: Fabrication design<br>Game Design, Motion Graphic, Character Design, Filming<br><a href ="https://www.gamasutra.com/view/news/291659/AltCtrlGDC_Showcase_Schadenfreude.php" target="_blank">CLICK HERE!</a></div>
                   </div>
                   <br><br><br>
-                  <iframe class="uivideo" src="https://embed.wix.com/video?instanceId=d360ac0f-4409-444f-bfc3-03bb8d3b0401&biToken=d9fb4876-50fd-0ab3-1236-a2a997cfc2f4&pathToPage=shadenfreude&channelId=0c5bf52ba2f449cd8c86b6fba98fd2bf&videoId=abdbe8ebb8454f80b8819576c680d1cb&compId=comp-j6zq8iuu&sitePageId=sasph" frameborder="0" allowfullscreen></iframe>
+                  <iframe class="uivideo" src="https://www.youtube.com/embed/GdpAPmy4UT0" frameborder="0" allowfullscreen></iframe>
                   <div class ="blackLine"></div>
                  
                   <div class = "projectTitle">MOTION & GRAPHIC DESIGN</div>
@@ -726,7 +735,7 @@ a {
                   <div id= "projectUnderline"></div>
                   <div class = "projectOverview">FINALIST alt.ctrl.GDC 2017<br><br>Schadenfreude was selected as one of 20 finalists for alt.ctlr.gdc, an exhibition dedicated to alternative controllers and custom hardware.<br><br>The game was a big hit; always attracting a crowd of interested participants. The game play relies on a hidden traitor mechanic which caused quite the controversy among friends and strangers.</div>
                   <br><br><br>
-                  <iframe class="uivideo" src="https://embed.wix.com/video?instanceId=d360ac0f-4409-444f-bfc3-03bb8d3b0401&biToken=d9fb4876-50fd-0ab3-1236-a2a997cfc2f4&pathToPage=shadenfreude&channelId=e5bf5f9fb5044dfa8d4b8ed1662af643&videoId=e497dcaeb4514759b568a9f94ec9273d&compId=comp-j6zraxm1&sitePageId=sasph" frameborder="0" allowfullscreen></iframe>
+                  <iframe class="uivideo" src="https://www.youtube.com/embed/r_YTitIxsNo" frameborder="0" allowfullscreen></iframe>
                   <br><br><br>
                   <img class="pimages" src = "img/gdc1.jpg"><br>
                   <img class="pimages" src = "img/gdc4.jpg"><br>
@@ -761,6 +770,7 @@ a {
                   <iframe class ="uivideo" src="https://www.youtube.com/embed/aU1ztHZbPWQ" frameborder="0"></iframe>
                   
                   <div class ="blackLine"></div>
+                  <a class="close" href="#interaction-design">x</a>
               </div>
 
 
@@ -772,9 +782,9 @@ a {
             </div>
           </div>
 
-          <div id="popup5" class="overlay">
+          <div id="qnh" class="overlay">
               <div class="popup">
-                <div class="content"> <img src = "img/qna.png" width="1305px" ><a class="close" href="#t2">x</a>
+                <div class="content"> <img src = "img/qna.png" width="1305px" ><a class="close" href="#interaction-design">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -809,7 +819,7 @@ a {
                   <br><br><br>
                    <iframe class ="uivideo" src="https://www.youtube.com/embed/fu49ry9R2fI" frameborder="0"></iframe>
                   <div class ="blackLine"></div>
-
+                  <a class="close" href="#interaction-design">x</a>
                </div>
 
 
@@ -823,9 +833,9 @@ a {
             </div>
           </div>
 
-          <div id="popup6" class="overlay">
+          <div id="lybyrinth" class="overlay">
               <div class="popup">
-                <div class="content"> <img src = "img/pipi.png" width="1305px" ><a class="close" href="#t2">x</a>
+                <div class="content"> <img src = "img/pipi.png" width="1305px" ><a class="close" href="#interaction-design">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -850,14 +860,14 @@ a {
                   <div class = "projectTitle">GAME DESIGN</div>
                   <div id= "projectUnderline"></div>
                   <br><br><br>
-                  <iframe class="uivideo" src="https://embed.wix.com/video?instanceId=d360ac0f-4409-444f-bfc3-03bb8d3b0401&biToken=d9fb4876-50fd-0ab3-1236-a2a997cfc2f4&pathToPage=copy-of-shadenfreude&channelId=9c21c5ee08a04f919d3ba6c7d43e8e3e&videoId=24e6793b083944bb8d36c3a883c7d383&compId=comp-j7891bsj&sitePageId=qhgjk" frameborder="0" allowfullscreen></iframe>
+                  <iframe class="uivideo" src="https://www.youtube.com/embed/cT9wNvtvUSg" frameborder="0" ></iframe>
                   <div class ="blackLine"></div>
 
                   <div class = "projectTitle">PI DAY: LIBERTY SCIENCE CENTER in NEW JERSEY</div>
                   <div id= "projectUnderline"></div>
                   
                   <br><br><br>
-                  <iframe class="uivideo" src="https://embed.wix.com/video?instanceId=d360ac0f-4409-444f-bfc3-03bb8d3b0401&biToken=d9fb4876-50fd-0ab3-1236-a2a997cfc2f4&pathToPage=copy-of-shadenfreude&channelId=19747dd05ed145548047a42f03e14699&videoId=c6f149a5037241f486e146b35693cf76&compId=comp-j7891bsa&sitePageId=qhgjk" frameborder="0" allowfullscreen></iframe>
+                  <iframe class="uivideo" src="https://www.youtube.com/embed/Ws7W76NSHcI" frameborder="0" allowfullscreen></iframe>
                   <br>
 
                   <img class="pimages" src = "img/pid1.jpg"><br>
@@ -873,7 +883,7 @@ a {
                   <img class="pimages" src = "img/mlab2.jpg"><br>
                
                   <div class ="blackLine"></div>
-
+                  <a class="close" href="#interaction-design">x</a>
               </div>
 
 
@@ -889,12 +899,12 @@ a {
           </div>
 
 
-          <div id="popup7" class="overlay">
+          <div id="ellips-line" class="overlay">
               <div class="popup">
                 
                 
                   <div class="content" ><iframe class ="video" src="https://youtube.com/embed/mWY1kj_5iNo" frameborder="0"></iframe>
-                   <a class="close" href="#t3">x</a>
+                   <a class="close" href="#playground">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -924,12 +934,12 @@ a {
           </div>
 
 
-          <div id="popup8" class="overlay">
+          <div id="loop" class="overlay">
               <div class="popup">
                 
                 
                 <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/0bprMXoYcJk" frameborder="0"></iframe>
-                    <a class="close" href="#t3">x</a>
+                    <a class="close" href="#playground">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -958,12 +968,12 @@ a {
           </div>
 
 
-          <div id="popup9" class="overlay">
+          <div id="led-speaker" class="overlay">
               <div class="popup">
                 
                 
                 <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/vuRXn7YF5vU" frameborder="0"></iframe>
-                    <a class="close" href="#t3">x</a>
+                    <a class="close" href="#playground">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -991,13 +1001,13 @@ a {
             </div>
           </div>
 
-          <div id="popup10" class="overlay">
+          <div id="drum-kit" class="overlay">
               <div class="popup">
                 
                 
                 <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/Apo3fWQx4Mo" frameborder="0"></iframe>
                     
-                    </div><a class="close" href="#t3">x</a>
+                    </div><a class="close" href="#playground">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -1025,12 +1035,12 @@ a {
             </div>
           </div>
 
-          <div id="popup11" class="overlay">
+          <div id="flower-pot" class="overlay">
               <div class="popup">
                 
                 
                 <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/AFnKZlLd_FY" frameborder="0"></iframe>
-                    <a class="close" href="#t3">x</a>
+                    <a class="close" href="#playground">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -1058,12 +1068,12 @@ a {
             </div>
           </div>
 
-          <div id="popup12" class="overlay">
+          <div id="alt-controller" class="overlay">
               <div class="popup">
                 
                 
                 <div class="content"><iframe class ="video" src="https://www.youtube.com/embed/zeolleLHZaw" frameborder="0"></iframe>
-                    <a class="close" href="#t3">x</a>
+                    <a class="close" href="#playground">x</a>
                 
                   
                   <div class = "projectTitle">OVERVIEW</div>
@@ -1091,11 +1101,11 @@ a {
             </div>
           </div>
 
-          <div id="popup13" class="overlay">
+          <div id="proactiv" class="overlay">
               <div class="popup">
                 
                 
-                  <div class="content"> <img class="images" src = "img/pro1.jpg"  ><img class="images" src = "img/pro2.jpg"  ><a class="close" href="#t4">x</a>
+                  <div class="content"> <img class="images" src = "img/pro1.jpg"  ><img class="images" src = "img/pro2.jpg"  ><a class="close" href="#advertising">x</a>
                 
                   
                   <div class = "adprojectTitle">OVERVIEW</div>
@@ -1121,11 +1131,11 @@ a {
             </div>
           </div>
 
-          <div id="popup14" class="overlay">
+          <div id="bodywild" class="overlay">
               <div class="popup">
                 
                 
-                  <div class="content"><img class="images" src = "img/body1.jpg"  ><img class="images" src = "img/body2.jpg"  ><a class="close" href="#t4">x</a>
+                  <div class="content"><img class="images" src = "img/body1.jpg"  ><img class="images" src = "img/body2.jpg"  ><a class="close" href="#advertising">x</a>
                 
                   
                   <div class = "adprojectTitle">OVERVIEW</div>
@@ -1151,11 +1161,11 @@ a {
             </div>
           </div>
 
-          <div id="popup15" class="overlay">
+          <div id="tombow" class="overlay">
               <div class="popup">
                 
                 
-                  <div class="content"><img class="images" src = "img/tom2.jpg"  ><img class="images" src = "img/tom3.jpg"  ><a class="close" href="#t4">x</a>
+                  <div class="content"><img class="images" src = "img/tom2.jpg"  ><img class="images" src = "img/tom3.jpg"  ><a class="close" href="#advertising">x</a>
                 
                   
                   <div class = "adprojectTitle">OVERVIEW</div>
@@ -1201,10 +1211,20 @@ a {
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js'></script>
 
     <script src="js/index.js"></script>
+     <script>
 
+        
+        var ol = document.getElementById("loadingman");
+        window.addEventListener("load", function(){
+
+          ol.style.display = "none";
+
+        });
+
+      </script>
 
 
 
 </body>
-
+  
 </html>

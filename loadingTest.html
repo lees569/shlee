@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lnag ="en">
+	<head>
+		<meta charset = "utf-8">
+
+<style>
+
+#loadingman{
+
+
+  width: 100%;
+  height:100%;
+/*  background-color: gray;*/
+  position: fixed;
+  margin:-0.7%;
+  opacity: 0.8;
+}
+  
+
+
+</style>
+
+	</head>
+  <style>
+
+*{box-sizing: border-box;}
+
+body{
+
+  margin:0;
+  padding: 0;
+  font-family: lato;
+
+}
+
+.preload{
+
+  width:100%;
+  height: 100%;
+  background: #333;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+
+
+}
+
+
+#loader-frame {
+
+  width: 70px;
+  height: 70px;
+  margin: 350px auto;
+  position: relative;
+}
+
+
+.loader1, .loader2 {
+  position: absolute;
+  border:5px solid transparent;
+  border-radius: 50%;
+
+}
+
+.loader1 {
+
+  width: 70px;
+  height: 70px;
+  border-top: 5px solid azure;
+  border-bottom: 5px solid azure;
+  animation: clockwisespin 2s linear 3;
+
+}
+.loader2 {
+
+  width: 60px;
+  height: 60px;
+  border-top: 5px solid darkturquoise;
+  border-bottom: 5px solid darkturquoise;
+  top: 5px; left:5px;
+  animation: anticlockwisespin 2s linear 3;
+
+}
+@keyframes clockwisespin{
+
+
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@keyframes anticlockwisespin{
+
+
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-360deg);}
+}
+/*@keyframes fadeout {
+  from{opacity: 1;}
+  to{opacity: 0;}
+
+}
+*/
+
+  </style>
+
+
+
+	<body>
+      <div id = "loadingman"><img width ="400" height="300" src="img/loading.gif"></div>
+    <iframe src="https://www.youtube.com/embed/SVTuMHu-LaM" frameborder="0"></iframe>
+
+
+
+
+
+<!-- 		<div class ="preload"> -->
+      <h2>HHHHHH</h2>
+      <div id="loader-frame">
+          <div class = "loader1" id ="loader1"></div>
+          <div class = "loader2" id ="loader2"></div>
+         
+      </div>
+<!--     </div> -->
+
+	</body>
+
+        <script>
+
+  
+  var ol = document.getElementById("loader-frame");
+  window.addEventListener("load", function(){
+
+    ol.style.display = "none";
+
+  });
+
+</script>
+<!-- 	    <script src="js/script.js"></script> -->
+</html>
