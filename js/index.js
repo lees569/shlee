@@ -1,5 +1,4 @@
 
-
 //tile zoomIn
 
  $('.tile')
