@@ -238,7 +238,7 @@ a:hover{
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  color: #aba9f4;
+  color: black;
 
 }
 .scrollto {
@@ -612,10 +612,28 @@ a:hover{
  
     margin: 0 auto;
 }
+
+.fashionimages{
+
+  display: block;
+    width: 93%;
+ 
+    margin: 0 auto;
+}
+
+
 .pimages{
 
   display: block;
   width: 56%;
+ 
+  margin: 0 auto;
+}
+
+.webimages{
+
+  display: block;
+  width: 76%;
  
   margin: 0 auto;
 }
